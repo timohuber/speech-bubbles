@@ -1,0 +1,83 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(https://storage.googleapis.com/nuclear_games_bucket/00_final_renderings/01_Cuba/00_Prototype/Cuba_json-Test01_051120/S_110_010_02/images/img_10.jpg);
+  background-size: cover;
+  background-position: center center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+  body > div {
+    padding: 60px;
+    display: flex; }
+
+h1 {
+  color: #fff; }
+
+.speech-bubble-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-right: 50px; }
+  .speech-bubble-wrapper.reverse {
+    flex-direction: row-reverse; }
+
+.speech-bubble {
+  display: inline-block;
+  position: relative;
+  background-color: #fff;
+  padding: 1.5rem; }
+
+.speech-bubble-content {
+  font-size: 3rem;
+  text-align: center;
+  color: #000;
+  text-transform: uppercase;
+  position: relative; }
+
+.speech-bubble-arrow {
+  width: 200px; }
+
+.speech-bubble:before,
+.speech-bubble:after {
+  content: '';
+  position: absolute;
+  height: 7px;
+  width: 50%;
+  background-color: #fff; }
+
+.speech-bubble:before {
+  top: 0;
+  right: 0;
+  transform: translateY(-6px); }
+
+.speech-bubble:after {
+  bottom: 0;
+  left: 0;
+  transform: translateY(6px); }
+
+.skew {
+  /* Blitz spiegeln */ }
+  .skew .speech-bubble-arrow {
+    transform: skew(-12deg); }
+  .skew .speech-bubble {
+    background-color: #fff;
+    transform: skew(-12deg);
+    padding: 1.5rem; }
+  .skew .speech-bubble-content {
+    transform: skew(12deg); }
+  .skew .speech-bubble-wrapper.reverse .speech-bubble-arrow {
+    transform: skew(-12deg) scaleX(-1); }
+
+.rotate {
+  /* Blitz spiegeln */ }
+  .rotate .speech-bubble-wrapper {
+    transform: rotate(3deg); }
+  .rotate .speech-bubble-content {
+    transform: rotate(-3deg); }
+  .rotate .speech-bubble-wrapper.reverse .speech-bubble-arrow {
+    transform: scaleX(-1); }

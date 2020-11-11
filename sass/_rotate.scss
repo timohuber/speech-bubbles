@@ -1,0 +1,16 @@
+.rotate {
+    .speech-bubble-wrapper {
+        transform: rotate(3deg);
+    }
+
+    .speech-bubble-content {
+        transform: rotate(-3deg);
+    }
+
+    /* Blitz spiegeln */
+    .speech-bubble-wrapper.reverse {
+        .speech-bubble-arrow {
+            transform: scaleX(-1);
+        }
+    }
+}

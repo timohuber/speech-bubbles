@@ -1,0 +1,22 @@
+.skew {
+    .speech-bubble-arrow {
+        transform: skew(-12deg);
+    }
+
+    .speech-bubble {
+        background-color: #fff;
+        transform: skew(-12deg);
+        padding: 1.5rem;
+    }
+
+    .speech-bubble-content {
+        transform: skew(12deg);
+    }
+
+    /* Blitz spiegeln */
+    .speech-bubble-wrapper.reverse {
+        .speech-bubble-arrow {
+            transform: skew(-12deg) scaleX(-1);
+        }
+    }
+}
